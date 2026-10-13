@@ -1,0 +1,12 @@
+li {
+  font-weight: bold;
+  list-style-type: disc;
+}
+
+ul ul {
+  padding-left: 20px;
+}
+
+.price {
+  font-style: italic;
+}
