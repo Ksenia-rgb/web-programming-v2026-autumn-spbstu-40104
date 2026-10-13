@@ -17,13 +17,13 @@ function includesArray(arrFromCheck, arrToCheck) {
 export function findPairsWithSum(arr, sum) {
   const retArr = [];
 
-  let arrSorted = arr.slice();
+  const arrSorted = arr.slice();
   arrSorted.sort((num1, num2) => num1 - num2);
 
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
       if (arr[i] + arr[j] === sum) {
-        let pair = [arr[i], arr[j]];
+        const pair = [arr[i], arr[j]];
         if (!includesArray(retArr, pair)) {
           retArr.push(pair);
         }
