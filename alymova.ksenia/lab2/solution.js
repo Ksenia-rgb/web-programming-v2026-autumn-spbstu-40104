@@ -15,5 +15,5 @@ export function isBalanced(str) {
       }
     }
   }
-  return workArr.length == 0;
+  return workArr.length === 0;
 }
