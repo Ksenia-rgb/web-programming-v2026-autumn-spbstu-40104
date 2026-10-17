@@ -22,13 +22,13 @@ export function findPairsWithSum(arr, sum) {
 
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
-      if (arr[i] + arr[j] === sum) {
-        const pair = [arr[i], arr[j]];
+      if (arrSorted[i] + arrSorted[j] === sum) {
+        const pair = [arrSorted[i], arrSorted[j]];
         if (!includesArray(retArr, pair)) {
           retArr.push(pair);
         }
       }
-      if (arr[i] + arr[j] > sum) {
+      if (arrSorted[i] + arrSorted[j] > sum) {
         break;
       }
     }
